@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1030.0" style="-fx-background-image: url(&quot;file:src/main/resources/se2203b/ipayroll/WesternBackground.png&quot;);              -fx-background-repeat: no-repeat;             -fx-background-size: 100% 100%;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.ipayroll.IPayrollController">
+    <top>
+        <MenuBar fx:id="mainMenu" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Manage Employee Profiles">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Add New Profile" />
+                        <MenuItem mnemonicParsing="false" text="Modify/Delete profile" />
+                    </items></Menu>
+                <Menu mnemonicParsing="false" text="Generate Payroll Reports">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Local payroll expenses" />
+                  <MenuItem mnemonicParsing="false" text="Federal tax withholdings" />
+                    </items></Menu>
+                <Menu mnemonicParsing="false" text="Print Checks" />
+                <Menu mnemonicParsing="false" text="View Compensations" />
+                <Menu mnemonicParsing="false" text="Manage leaves" />
+                <Menu fx:id="manageUserAccountsMenu" mnemonicParsing="false" text="Manage User Accounts">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Create User Account" />
+                        <MenuItem mnemonicParsing="false" text="Delete User Account" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About Us" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>
